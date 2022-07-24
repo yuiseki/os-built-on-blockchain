@@ -15,7 +15,9 @@ RUN apt update && apt install -y \
     # asm
     nasm \
     # Linux kernel
-    ncurses-dev bison flex libelf-dev openssl libssl-dev
+    bc ncurses-dev bison flex libelf-dev openssl libssl-dev \
+    # busybox
+    cpio
 
 RUN curl -Ls https://deb.nodesource.com/setup_18.x | bash
 RUN apt update && apt install -y nodejs
